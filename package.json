@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@11.26.0",
+  "packageManager": "pnpm@12.3.3",
   "workspaces": [
     "packages/*",
     "play",
@@ -40,7 +40,7 @@
     "docs:crowdin-credentials": "pnpm run -C docs crowdin-credentials",
     "stub": "pnpm run -r --parallel stub",
     "prepare": "husky",
-    "postinstall": "pnpm stub && pnpm gen:version & pnpm run -C internal/metadata dev &"
+    "postinstall": "pnpm stub && pnpm gen:version && pnpm run -C internal/metadata dev"
   },
   "dependencies": {
     "@element-plus/components": "workspace:*",
